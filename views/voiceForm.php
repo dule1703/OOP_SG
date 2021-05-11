@@ -12,8 +12,9 @@
         <title>Voice form</title>
     </head>
     <body>
+        <h1 class="text-center">Voice Form page!</h1>
         <?php
-        
+          
         ?>
     </body>
 </html>

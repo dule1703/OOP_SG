@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-require_once '../controllers/controllerGlasaci.php';
+require_once '/home/ddweba/testing-PHP-JS.ddwebapps.com/OOP_MVC_SG/controllers/controllerGlasaci.php';
 ?>
 <!DOCTYPE html>
 
@@ -42,9 +42,9 @@ require_once '../controllers/controllerGlasaci.php';
                 foreach ($arrayOfVoices as $x => $x_value) {
                     $rezTab .= "<tr >";
                     $rezTab .= "<td>" . $i++ . "</td>";
-                    $rezTab .= "<td>" . $x_value->getIme() . "</td>";
-                    $rezTab .= "<td>" . $x_value->getPrezime() . "</td>";
-                    $rezTab .= "<td>" . $x_value->getBroj_telefona() . "</td>";
+                    $rezTab .= "<td>" . htmlspecialchars($x_value->getIme()) . "</td>";
+                    $rezTab .= "<td>" . htmlspecialchars($x_value->getPrezime()) . "</td>";
+                    $rezTab .= "<td>" . htmlspecialchars($x_value->getBroj_telefona()) . "</td>";
                     $rezTab .= "</tr>";
                 }
                 echo $rezTab;
