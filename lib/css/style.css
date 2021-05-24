@@ -1,0 +1,28 @@
+.login-form {
+    width: 320px !important; 
+    margin-top: 200px;
+}
+
+.main-section{
+    padding: 15px;
+    background:#f1f1f1;
+    margin-top: 50px;    
+}
+
+.warning-text {
+    font-size: 10px;
+    color: red !important;
+}
+
+.logout-link {
+  color: #FFF;
+  margin-left: 40px;
+}
+
+.header-app {
+  background-color: #17a2b8;
+  padding: 20px 0;
+}
+
+
+
